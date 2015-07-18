@@ -6,7 +6,7 @@ import lejos.nxt.*;
 
 public class AlarmTask extends TimerTask {
 
-	final int LIGHT_THRESHOLD = 35;
+	final int LIGHT_THRESHOLD = 20;
 	final int BEEP_RATE = 1 * 1000;
 	final int SNOOZE_DELAY = 10 * 1000;
 	final int SNOOZE_TIME = 30 * 60 * 1000;

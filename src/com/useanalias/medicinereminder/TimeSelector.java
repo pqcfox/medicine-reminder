@@ -39,7 +39,7 @@ public class TimeSelector {
 					if (menu_enabled)
 						current = current.subtract(increments[position]);
 					else
-						position = (position - 1) % 3;
+						position = (position + 2) % 3;
 					break;
 					
 				case Button.ID_RIGHT:

@@ -8,6 +8,7 @@ public class MedicineReminder {
 	static String times_path = "medicine_times.txt";
 	
 	public static void main(String[] args) {
+		Sound.setVolume(Sound.VOL_MAX);
 		ArrayList<Time> alarms = new ConfigReader().read(times_path);
 		if (alarms == null)
 			exitWithError("Could not read " + times_path);

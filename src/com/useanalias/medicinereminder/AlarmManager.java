@@ -21,11 +21,11 @@ public class AlarmManager {
 	}
 	
 	public void scheduleTimers(Time current, ArrayList<Time> alarms) {
-		Timer alarm_timer = new Timer();
+		Timer alarmTimer = new Timer();
 		for (Time alarm : alarms) {
-			AlarmTask task = new AlarmTask(alarm);
+			AlarmTask task = new AlarmTask();
 			int delta = alarm.subtract(current).inSeconds() * 1000;
-			alarm_timer.scheduleAtFixedRate(task, delta, DAY_LENGTH);
+			alarmTimer.scheduleAtFixedRate(task, delta, DAY_LENGTH);
 		}
 	}
 	

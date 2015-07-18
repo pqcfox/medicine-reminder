@@ -88,6 +88,6 @@ public class Time implements Comparable<Time>{
 
 	@Override
 	public int compareTo(Time other) {
-		return Integer.signnum(inSeconds() - other.inSeconds());
+		return inSeconds() - other.inSeconds();
 	}
 }

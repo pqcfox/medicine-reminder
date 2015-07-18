@@ -12,7 +12,7 @@ public class TimeSelector {
 	final Time[] increments = {new Time(1, 0, 0), new Time(0, 1, 0), new Time(0, 0, 1)};
 	
 	public Time selectTime() {
-		Time current = new Time(0, 0, 0);
+		Time current = new Time(0, 0, 0); // for debug only
 		Graphics g = new Graphics();
 		boolean menu_enabled = false;
 		int position = 0;
